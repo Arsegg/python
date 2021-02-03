@@ -35,7 +35,7 @@ def main(*args: str) -> NoReturn:
         args (str): arguments.
     """
     args = _parseArgs(args)
-    result = "ОК" if _isEqual(args.text, args.pattern) else "КО"
+    result = "ОК" if _isEqual(args.text, args.pattern) else "КО"  # NB: "ОК" and "КО" written with cyrillic letters
     print(result)
 
 
